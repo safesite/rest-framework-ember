@@ -12,7 +12,7 @@ def get_readme():
 
 setup(
     name='rest_framework_ember',
-    version='1.3.2',
+    version='1.3.3',
     description="A Django Rest Framework adapter that provides Ember Data \
         support. When jsonapi.org reaches 1.0 this adapter plans to adopt it.",
     long_description=get_readme(),
@@ -29,8 +29,6 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Topic :: Software Development :: Libraries :: Application Frameworks',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ]
