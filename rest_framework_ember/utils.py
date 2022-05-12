@@ -4,7 +4,6 @@ Utils.
 import inflection
 
 from django.conf import settings
-from django.utils import six
 
 try:
     from rest_framework.compat import OrderedDict
@@ -37,7 +36,7 @@ def get_resource_name(view):
                 except AttributeError:
                     resource_name = view.__class__.__name__
 
-    if isinstance(resource_name, six.string_types):
+    if isinstance(resource_name, str):
         return inflection.camelize(resource_name, False)
 
     return resource_name
